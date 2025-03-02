@@ -132,14 +132,15 @@
          </div>
             <!-- <div id="disorder-list"></div> -->
         </section>
-
+    
+    <div class="container5">
        <section id="assessment">
             <h2>Self-Assessment</h2>
             <form id="assessment-form">
                 <label for="symptom">Enter a symptom:</label>
                 <input type="text" id="symptom" required placeholder="e.g., anxiety, insomnia">
                 <button type="submit" id="button1"><b>Assess</b></button>
-               
+                <!-- <div id="assessment-result"></div> -->
             </form>
             <div id="assessment-result"></div>
         </section>
@@ -160,23 +161,38 @@
             </form>
             <div id="tracking-result"></div>
         </section>
+    </div>
 
-        <section id="resources">
-            <h2>Resources</h2>
+    <section id="resources">
+        <h2>Resources</h2>
+        <ul id="resource-list">
+            <li>
+                <img src="MHG.jpeg" alt="MentalHealth.gov">
+                <a href="https://www.mentalhealth.gov/" target="_blank" class="R">MentalHealth.gov</a>
+            </li>
             
-            <ul id="resource-list">
-              
-                <img id="org" src="MHG.jpeg">
-                <li><a href="https://www.mentalhealth.gov/" target="_blank" class="R">MentalHealth.gov</a></li>
-                <img id="org1"src="NIMH.jpg">
-                <li><a href="https://www.nimh.nih.gov/" target="_blank" class="R">National Institute of Mental Health</a></li>
-                <img  id="org2" src="WHO.jpg">
-                <li><a href="https://www.who.int/mental_health/en/" class=" R"target="_blank">WHO Mental Health</a></li>
-            </ul>
+            <li>
+                <img src="NIMH.jpg" alt="National Institute of Mental Health">
+                <a href="https://www.nimh.nih.gov/" target="_blank" class="R">National Institute of Mental Health</a>
+            </li>
             
-        </section>
+            <li>
+                <img src="WHO.jpg" alt="WHO Mental Health">
+                <a href="https://www.who.int/mental_health/en/" target="_blank" class="R">WHO Mental Health</a>
+            </li>
+            <li>
+                <img src="DBSA.png" alt="Depression and Bipolar Support Alliance">
+                <a href="https://www.dbsalliance.org/" target="_blank" class="R">Depression and Bipolar Support Alliance</a>
+            </li>
+            <li>
+                <img src="MHFA2.png" alt="Mental Health First Aid">
+                <a href="https://www.mentalhealthfirstaid.org/mental-health-resources/" target="_blank" class="R">Mental Health First Aid</a>
+            </li>
+        </ul>
+    </section>
+    
     </main>
-  <footer>
+  <!-- <footer>
     <h3>Contact us:</h3>
     <div class="container">
     <img id="icon" src="facebook-color-icon-2048x2048-bfly1vxr.png">
@@ -186,7 +202,32 @@
     <img  id="icon" src="Vector-Instagram-icon-PNG-removebg-preview.png">
     <h4>@MentalAwarenessKenya</h4>
     </div>
-  </footer>
+  </footer> -->
+  <footer id="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <h2>Mental Health Awareness</h2>
+        </div>
+        
+        <div class="footer-links">
+            
+            <a href="#resources">Resources</a>
+            <a href="#tracking">Tracking</a>
+            <a href="#assessment">Self-Assessment</a>
+        </div>
+        
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank"><img src="facebook-color-icon-2048x2048-bfly1vxr.png" alt="Facebook">@MentalAwarenessKenya</a>
+            <a href="https://www.twitter.com" target="_blank"><img src="free-phone-icon-1-thumb.png" alt="Twitter">+2547000000000</a>
+            <a href="https://www.instagram.com" target="_blank"><img src="Vector-Instagram-icon-PNG-removebg-preview.png" alt="Instagram">@MentalAwarenessKenya</a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Mental Health Awareness | All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
 
     <script src="script.js"></script>
 </body>
