@@ -1,236 +1,314 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mental Health Awareness </title>
-    <link rel="stylesheet" href="style.css">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        #icon{
-            height:70px;
-            width:70px;
-        }
-        .container{
-            margin-top:5%;
-        }
-        h3{
-            margin-top:3%;
-        }
-        #tag{
-            text-align: center;
-            font-family: Times New Roman;
-            font-size: 80px;
-            margin:2%;
-        }
-        span{
-            color:orange;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SereniMind — Mental Health Awareness. Learn about mental health disorders, take a self-assessment, and track your wellbeing." />
+    <title>SereniMind — Mental Health Awareness</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-   
-    <header class=" rounded-lg shadow-lg text-black p-2 flex items-center justify-between shadow-lg">
-        <!-- <h1 class="text-4xl font-extrabold tracking-wide animate-pulse">Mental Health Awareness</h1> -->
-        <a href="#" class="flex items-center space-x-3 ml-5">
-            <img src="world_mental_health_day_2022-removebg-preview.png" alt="World Mental Health Day Logo" class="h-28 w-28 object-contain">
-            <h1 class="text-3xl font-serif tracking-wide">SereniMind</h1>
-        </a>
-    
-        <nav class="space-x-6 font-serif text-lg font-medium text-black">
-            <a href="#disorders" class=" p-2 rounded-lg transition duration-300">Disorders</a>
-            <a href="#assessment" class=" p-2 rounded-lg transition duration-300">Self-Assessment</a>
-            <a href="#tracking" class="  p-2 rounded-lg transition duration-300">Tracking</a>
-            <a href="#resources" class=" p-2 rounded-lg  transition duration-300">Resources</a>
-        </nav>
-    </header>
-    
-        
-                  
-          <div class="grid grid-cols-3 gap-4 p-4 m-10">
-            <img class="h-64 w-full object-cover " src="mental health disorders.jpg" alt="Mental Health Disorders">
-            <img class="h-64 w-full object-cover " src="world_mental_health_day_2022-removebg-preview.png" alt="World Mental Health Day">
-            <img class="h-64 w-full object-cover" src="mental-health-empowerment-removebg-preview.png" alt="Mental Health Empowerment">
-          </div>
-          
-           
-        
-        <p id="tag" class="m-1">Empowering<span> Minds</span></p>
-    <main>
-        <section id="disorders" class="mx-auto">
-            <h2 class="text-2xl m-5 font-serif">Mental Health Disorders</h2>
-         <div class="container mx-auto">
-            <a href="depression.html"><img class="frame" src=depression.jpg alt="depression" target="-blank"></a>
-            <a id= "link" class="text-xl mt-5" href="depression.html">↩ Depression</a>
-            <a href="bipolar.html"><img class="frame" src=bipolar.png alt="bipolar disorder"></a>
-            <a id= "link"href="bipolar.html" class="text-xl mt-5">↩ Bipolar/ Maniac Disorder</a>
-            <a href="ptsd.html"><img class="frame" src=PTSD.png alt="PTSD"></a>
-            <a id= "link"href="PTSD.html" class="text-xl mt-5">↩ PTSD</a>
-            <a href="anxiety.html"><img class="frame" src=anxiety.jpg alt="anxiety"></a>
-            <a id= "link"href="anxiety.html" class="text-xl mt-5">↩ Anxiety</a>
-            
+
+    <!-- ============ HEADER ============ -->
+    <header class="site-header">
+        <div class="nav-wrap">
+            <a href="#top" class="brand">
+                <img src="images/world_mental_health_day_2022-removebg-preview.png" alt="" />
+                <span>SereniMind</span>
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="site-nav">
+                <a href="#disorders">Disorders</a>
+                <a href="#assessment">Self-Assessment</a>
+                <a href="#tracking">Tracking</a>
+                <a href="#resources">Resources</a>
+            </nav>
         </div>
-        <div class="container mx-auto">
-            
-            <a href="stress.html"><img class="frame" src=stress.png alt="stress"></a>
-            <a id= "link"href="stress.html" class="text-xl mt-5">↩ stress</a>
-            
-            <a href="schizophrenia.html"><img class="frame" src=schizophrenia.PNG alt="schizophrenia"></a>
-            <a id= "link"href="schizophrenia.html" class="text-xl mt-5">↩ Schizophrenia</a>
-            
-            <a href="eating.html"><img class="frame" src=eatingd.PNG alt="eating"></a>
-            <a id= "link"href="Eating.html" class="text-xl mt-5">↩ Eating Disorders</a>
-            
-            <a href="OCD.html"><img class="frame" src=OCD.PNG alt="OCD"></a>
-            <a id= "link"href="OCD.html" class="text-xl mt-1">↩ Obsessive compulsive<br>disorder (OCD)</a>
-         </div>
+    </header>
 
-         <div class="container mx-auto">
-            
-            <a href="adhd.html"><img class="frame1" src=ADD.png alt="stress"></a>
-            <a id= "link"href="adhd.html" class="text-xl ">↩ Attention-Deficit/ Hyperactivity Disorder</a>
-            
-            <a href="asd.html"><img class="frame1" src=asd.png alt="schizophrenia"></a>
-            <a id= "link"href="asd.html" class="text-xl ">↩ Autism Spectrum Disorder (ASD)</a>
-            
-            <a href="aspd.html"><img class="frame1" src=aspd.jpeg alt="eating"></a>
-            <a id= "link"href="aspd.html" class="text-xl ">↩ Antisocial Personality Disorder (ASPD)</a>
-            
-            <a href="bdd.html"><img class="frame1" src=bdd.jpg alt="OCD"></a>
-            <a id= "link"href="bdd.html" class="text-xl ">↩ Body Dysmorphic Disorder (BDD)</a>
-         </div>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+        <div class="hero-inner">
+            <span class="eyebrow">Mental Health Awareness</span>
+            <h1>Empowering <span class="accent">Minds</span>.</h1>
+            <p class="hero-sub">
+                Understand mental health, recognize the signs, and find trusted
+                resources — all in one place.
+            </p>
+            <div class="hero-cta">
+                <a href="#disorders" class="btn">Explore Disorders</a>
+                <a href="#assessment" class="btn btn-secondary">Self-Assessment</a>
+            </div>
+        </div>
 
-         <div class="container mx-auto">
-            
-            <a href="bpd.html"><img class="frame2" src=bpd.jpg alt="stress"></a>
-            <a id= "link"href="bpd.html" class="text-xl ">↩ Borderline Personality Disorder (BPD)</a>
-            
-            <a href="dpdr.html"><img class="frame2" src=dpdr.jpeg alt="schizophrenia"></a>
-            <a id= "link"href="dpdr.html" class="text-xl ">↩ Depersonalization/ Derealization Disorder</a>
-            
-            <a href="gad.html"><img class="frame2" src=gad.PNG alt="eating"></a>
-            <a id= "link"href="gad.html" class="text-xl">↩ Generalized Anxiety Disorder (GAD)</a>
-            
-            <a href="hoarding.html"><img class="frame2" src=hoard.jpeg alt="OCD"></a>
-            <a id= "link"href="hoarding.html" class="text-xl ">↩ Hoarding Disorder</a>
-         </div>
+        <div class="hero-gallery">
+            <img src="images/mental health disorders.jpg" alt="Mental Health Disorders" />
+            <img src="images/world_mental_health_day_2022-removebg-preview.png" alt="World Mental Health Day" />
+            <img src="images/mental-health-empowerment-removebg-preview.png" alt="Mental Health Empowerment" />
+        </div>
+    </section>
 
-         <div class="container mx-auto">
-            
-            <a href="insomnia.html"><img class="frame1" src=insomnia.jpeg alt="stress"></a>
-            <a id= "link"href="insomnia.html" class="text-xl ">↩ Insomnia</a>
-            
-            <a href="mmd.html"><img class="frame1" src=mdd.jpeg alt="schizophrenia"></a>
-            <a id= "link"href="mmd.html" class="text-xl ">↩ Major Depressive Disorder (MDD)</a>
-            
-            <a href="phobia.html"><img class="frame1" src=phobia.PNG alt="eating"></a>
-            <a id= "link"href="phobia.html" class="text-xl ">↩ Common Phobias</a>
-            
-            <a href="sad.html"><img class="frame1" src=sad.PNG alt="OCD"></a>
-            <a id= "link"href="sad.html" class="text-xl ">↩ Social Anxiety Disorder (SAD)</a>
-         </div>
-            <!-- <div id="disorder-list"></div> -->
-        </section>
-    
-    <div class="container5">
-       <section id="assessment">
-            <h2>Self-Assessment</h2>
-            <form id="assessment-form">
-                <label for="symptom">Enter a symptom:</label>
-                <input type="text" id="symptom" required placeholder="e.g., anxiety, insomnia">
-                <button type="submit" id="button1"><b>Assess</b></button>
-                <!-- <div id="assessment-result"></div> -->
-            </form>
-            <div id="assessment-result"></div>
-        </section>
+    <!-- ============ DISORDERS ============ -->
+    <section class="section" id="disorders">
+        <div class="section-head">
+            <span class="eyebrow">Learn</span>
+            <h2>Mental Health Disorders</h2>
+            <p class="section-sub">
+                Browse common conditions, understand their symptoms, and learn
+                when to seek support.
+            </p>
+        </div>
 
-        <section id="tracking">
-            <h2>Tracking</h2>
-            <form id="tracking-form">
-                <label for="sleep">Hours of sleep last night:</label>
-                <input type="number" id="sleep" required>
-                
-                <label for="stress">Stress level (1-10):</label>
-                <input type="number" id="stress" min="1" max="10" required>
-                
-                <label for="mood">Mood (1-10):</label>
-                <input type="number" id="mood" min="1" max="10" required>
-                
-                <button type="submit"><b>Track</b></button>
-            </form>
-            <div id="tracking-result"></div>
-        </section>
-    </div>
+        <div class="disorder-grid">
+            <a class="disorder-card" href="pages/depression.html">
+                <div class="thumb"><img src="images/depression.jpg" alt="" /></div>
+                <span class="disorder-name">Depression</span>
+            </a>
 
-    <section id="resources">
-        <h2>Resources</h2>
-        <ul id="resource-list">
+            <a class="disorder-card" href="pages/bipolar.html">
+                <div class="thumb"><img src="images/bipolar.PNG" alt="" /></div>
+                <span class="disorder-name">Bipolar / Manic Disorder</span>
+            </a>
+
+            <a class="disorder-card" href="pages/ptsd.html">
+                <div class="thumb"><img src="images/PTSD.png" alt="" /></div>
+                <span class="disorder-name">PTSD</span>
+            </a>
+
+            <a class="disorder-card" href="pages/anxiety.html">
+                <div class="thumb"><img src="images/anxiety.jpg" alt="" /></div>
+                <span class="disorder-name">Anxiety</span>
+            </a>
+
+            <a class="disorder-card" href="pages/stress.html">
+                <div class="thumb"><img src="images/stress.png" alt="" /></div>
+                <span class="disorder-name">Stress</span>
+            </a>
+
+            <a class="disorder-card" href="pages/schizophrenia.html">
+                <div class="thumb"><img src="images/schizophrenia.PNG" alt="" /></div>
+                <span class="disorder-name">Schizophrenia</span>
+            </a>
+
+            <a class="disorder-card" href="pages/Eating.html">
+                <div class="thumb"><img src="images/eatingd.PNG" alt="" /></div>
+                <span class="disorder-name">Eating Disorders</span>
+            </a>
+
+            <a class="disorder-card" href="pages/OCD.html">
+                <div class="thumb"><img src="images/OCD.PNG" alt="" /></div>
+                <span class="disorder-name">Obsessive Compulsive Disorder (OCD)</span>
+            </a>
+
+            <a class="disorder-card" href="pages/adhd.html">
+                <div class="thumb"><img src="images/ADD.png" alt="" /></div>
+                <span class="disorder-name">Attention-Deficit / Hyperactivity Disorder</span>
+            </a>
+
+            <a class="disorder-card" href="pages/asd.html">
+                <div class="thumb"><img src="images/asd.png" alt="" /></div>
+                <span class="disorder-name">Autism Spectrum Disorder (ASD)</span>
+            </a>
+
+            <a class="disorder-card" href="pages/aspd.html">
+                <div class="thumb"><img src="images/aspd.jpeg" alt="" /></div>
+                <span class="disorder-name">Antisocial Personality Disorder (ASPD)</span>
+            </a>
+
+            <a class="disorder-card" href="pages/bdd.html">
+                <div class="thumb"><img src="images/bdd.jpg" alt="" /></div>
+                <span class="disorder-name">Body Dysmorphic Disorder (BDD)</span>
+            </a>
+
+            <a class="disorder-card" href="pages/bpd.html">
+                <div class="thumb"><img src="images/bpd.jpg" alt="" /></div>
+                <span class="disorder-name">Borderline Personality Disorder (BPD)</span>
+            </a>
+
+            <a class="disorder-card" href="pages/dpdr.html">
+                <div class="thumb"><img src="images/dpdr.jpeg" alt="" /></div>
+                <span class="disorder-name">Depersonalization / Derealization Disorder</span>
+            </a>
+
+            <a class="disorder-card" href="pages/gad.html">
+                <div class="thumb"><img src="images/gad.PNG" alt="" /></div>
+                <span class="disorder-name">Generalized Anxiety Disorder (GAD)</span>
+            </a>
+
+            <a class="disorder-card" href="pages/hoarding.html">
+                <div class="thumb"><img src="images/hoard.jpeg" alt="" /></div>
+                <span class="disorder-name">Hoarding Disorder</span>
+            </a>
+
+            <a class="disorder-card" href="pages/insomnia.html">
+                <div class="thumb"><img src="images/insomnia.jpeg" alt="" /></div>
+                <span class="disorder-name">Insomnia</span>
+            </a>
+
+            <a class="disorder-card" href="pages/mmd.html">
+                <div class="thumb"><img src="images/mdd.jpeg" alt="" /></div>
+                <span class="disorder-name">Major Depressive Disorder (MDD)</span>
+            </a>
+
+            <a class="disorder-card" href="pages/phobia.html">
+                <div class="thumb"><img src="images/phobia.PNG" alt="" /></div>
+                <span class="disorder-name">Common Phobias</span>
+            </a>
+
+            <a class="disorder-card" href="pages/sad.html">
+                <div class="thumb"><img src="images/sad.PNG" alt="" /></div>
+                <span class="disorder-name">Social Anxiety Disorder (SAD)</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ============ TOOLS (Assessment + Tracking) ============ -->
+    <section class="section tools-section">
+        <div class="section-head">
+            <span class="eyebrow">Tools</span>
+            <h2>Check in with yourself</h2>
+            <p class="section-sub">
+                A symptom checker to point you in the right direction, and a daily
+                tracker to notice patterns over time.
+            </p>
+        </div>
+
+        <div class="tools-grid">
+
+            <!-- Assessment -->
+            <div class="tool-card" id="assessment">
+                <h3>Self-Assessment</h3>
+                <p class="tool-desc">
+                    Enter a symptom you're experiencing and we'll suggest related
+                    disorders to read about.
+                </p>
+                <form id="assessment-form">
+                    <label for="symptom">Symptom</label>
+                    <input
+                        type="text"
+                        id="symptom"
+                        placeholder="e.g., anxiety, insomnia, low mood"
+                        required
+                    />
+                    <button type="submit">Assess</button>
+                </form>
+                <div id="assessment-result" role="status" aria-live="polite"></div>
+            </div>
+
+            <!-- Tracking -->
+            <div class="tool-card" id="tracking">
+                <h3>Daily Tracking</h3>
+                <p class="tool-desc">
+                    Log your sleep, stress, and mood. Your last 5 entries appear
+                    below.
+                </p>
+                <form id="tracking-form">
+                    <label for="sleep">Hours of sleep last night</label>
+                    <input type="number" id="sleep" min="0" max="24" step="0.5" required />
+
+                    <label for="stress">Stress level (1–10)</label>
+                    <input type="number" id="stress" min="1" max="10" required />
+
+                    <label for="mood">Mood (1–10)</label>
+                    <input type="number" id="mood" min="1" max="10" required />
+
+                    <button type="submit">Track</button>
+                </form>
+                <div id="tracking-result" role="status" aria-live="polite"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ RESOURCES ============ -->
+    <section class="section" id="resources">
+        <div class="section-head">
+            <span class="eyebrow">Trusted Sources</span>
+            <h2>Resources</h2>
+            <p class="section-sub">
+                Reputable organizations offering information, tools, and support.
+            </p>
+        </div>
+
+        <ul class="resource-grid">
             <li>
-                <img src="MHG.jpeg" alt="MentalHealth.gov">
-                <a href="https://www.mentalhealth.gov/" target="_blank" class="R">MentalHealth.gov</a>
+                <a href="https://www.mentalhealth.gov/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/MHG.jpeg" alt="" />
+                    <span>MentalHealth.gov</span>
+                </a>
             </li>
-            
             <li>
-                <img src="NIMH.jpg" alt="National Institute of Mental Health">
-                <a href="https://www.nimh.nih.gov/" target="_blank" class="R">National Institute of Mental Health</a>
-            </li>
-            
-            <li>
-                <img src="WHO.jpg" alt="WHO Mental Health">
-                <a href="https://www.who.int/mental_health/en/" target="_blank" class="R">WHO Mental Health</a>
+                <a href="https://www.nimh.nih.gov/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/NIMH.jpg" alt="" />
+                    <span>National Institute of Mental Health</span>
+                </a>
             </li>
             <li>
-                <img src="DBSA.png" alt="Depression and Bipolar Support Alliance">
-                <a href="https://www.dbsalliance.org/" target="_blank" class="R">Depression and Bipolar Support Alliance</a>
+                <a href="https://www.who.int/mental_health/en/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/WHO.jpg" alt="" />
+                    <span>WHO Mental Health</span>
+                </a>
             </li>
             <li>
-                <img src="MHFA2.png" alt="Mental Health First Aid">
-                <a href="https://www.mentalhealthfirstaid.org/mental-health-resources/" target="_blank" class="R">Mental Health First Aid</a>
+                <a href="https://www.dbsalliance.org/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/DBSA.png" alt="" />
+                    <span>Depression & Bipolar Support Alliance</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.mentalhealthfirstaid.org/mental-health-resources/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/MHFA2.png" alt="" />
+                    <span>Mental Health First Aid</span>
+                </a>
             </li>
         </ul>
     </section>
-    
-    </main>
-  <!-- <footer>
-    <h3>Contact us:</h3>
-    <div class="container">
-    <img id="icon" src="facebook-color-icon-2048x2048-bfly1vxr.png">
-    <h4>@MentalAwarenessKenya</h4>
-    <img id="icon" src="free-phone-icon-1-thumb.png">
-    <h4>+2547002003004</h4>
-    <img  id="icon" src="Vector-Instagram-icon-PNG-removebg-preview.png">
-    <h4>@MentalAwarenessKenya</h4>
-    </div>
-  </footer> -->
-  <footer id="footer">
-    <div class="footer-container">
-        <div class="footer-logo">
-            <h2>Mental Health Awareness</h2>
-        </div>
-        
-        <div class="footer-links">
-            
-            <a href="#resources">Resources</a>
-            <a href="#tracking">Tracking</a>
-            <a href="#assessment">Self-Assessment</a>
-        </div>
-        
-        <div class="footer-social">
-            <a href="https://www.facebook.com" target="_blank"><img src="facebook-color-icon-2048x2048-bfly1vxr.png" alt="Facebook">@MentalAwarenessKenya</a>
-            <a href="https://www.twitter.com" target="_blank"><img src="free-phone-icon-1-thumb.png" alt="Twitter">+2547000000000</a>
-            <a href="https://www.instagram.com" target="_blank"><img src="Vector-Instagram-icon-PNG-removebg-preview.png" alt="Instagram">@MentalAwarenessKenya</a>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Mental Health Awareness | All rights reserved.</p>
-        </div>
-    </div>
-</footer>
 
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <h2>SereniMind</h2>
+                <p>Mental Health Awareness</p>
+            </div>
+
+            <nav class="footer-nav">
+                <a href="#disorders">Disorders</a>
+                <a href="#assessment">Self-Assessment</a>
+                <a href="#tracking">Tracking</a>
+                <a href="#resources">Resources</a>
+            </nav>
+
+            <div class="footer-social">
+                <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/facebook-color-icon-2048x2048-bfly1vxr.png" alt="Facebook" />
+                    <span>@MentalAwarenessKenya</span>
+                </a>
+                <a href="tel:+254700000000">
+                    <img src="images/free-phone-icon-1-thumb.png" alt="Phone" />
+                    <span>+254 700 000 000</span>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                    <img src="images/Vector-Instagram-icon-PNG-removebg-preview.png" alt="Instagram" />
+                    <span>@MentalAwarenessKenya</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; <span id="year"></span> SereniMind — Mental Health Awareness. All rights reserved.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
-
